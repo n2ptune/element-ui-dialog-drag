@@ -5,25 +5,25 @@
 </template>
 
 <script>
-import { Dialog } from "element-ui";
+import { Dialog } from 'element-ui'
 
 export default {
-  name: "CustomDialog",
+  name: 'CustomDialog',
   components: {
-    "el-dialog": Dialog,
+    'el-dialog': Dialog
   },
   computed: {
     mergedProps() {
       return {
         ...this.$attrs,
-        ...this.$props,
-      };
+        ...this.$props
+      }
     },
     listen() {
       return {
-        ...this.$listeners,
-      };
-    },
-  },
-};
+        ...this.$listeners
+      }
+    }
+  }
+}
 </script>

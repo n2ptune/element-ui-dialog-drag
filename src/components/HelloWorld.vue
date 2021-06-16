@@ -23,34 +23,34 @@
 export default {
   data: () => ({
     visibleModal: false,
-    visibleModal2: false,
+    visibleModal2: false
   }),
   methods: {
     handleModal() {
-      this.visibleModal = !this.visibleModal;
+      this.visibleModal = !this.visibleModal
     },
     onConfirm() {
-      this.$confirm("Hello World?", {
-        confirmButtonText: "예",
-        cancelButtonText: "아니오",
+      this.$confirm('Hello World?', {
+        confirmButtonText: '예',
+        cancelButtonText: '아니오'
       })
         .then(() => {
-          this.visibleModal = false;
+          this.visibleModal = false
         })
-        .catch(() => console.log("hello"));
+        .catch(() => console.log('hello'))
     },
     beforeClose(done) {
-      this.$confirm("Hello World?", {
-        confirmButtonText: "예",
-        cancelButtonText: "아니오",
+      this.$confirm('Hello World?', {
+        confirmButtonText: '예',
+        cancelButtonText: '아니오'
       })
         .then(() => {
-          this.visibleModal = false;
+          this.visibleModal = false
         })
-        .catch(() => console.log("hello"));
-    },
-  },
-};
+        .catch(() => console.log('hello'))
+    }
+  }
+}
 </script>
 
 <style>
